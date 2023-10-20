@@ -5,7 +5,7 @@ import IntroSlide from '../components/IntroSlide'
 const Home = () => {
 
   return (
-    <div className='h-[auto]'>
+    <div className='h-[480px]'>
       {/* <IntroSlide/> */}
     </div>
   )
