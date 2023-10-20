@@ -8,11 +8,11 @@ import {FaBars} from 'react-icons/fa'
 const Header = () => {
   return (
     <header id='header'>
-      <div className='h-[120px] border flex justify-between items-center' id='header-container'>
+      <div className='h-[120px] flex pl-10 pr-5  xl:px-5 justify-between xl:justify-center items-center gap-20' id='header-container'>
         {/* LOGO */}
          <div id='logo'>
-           <a href="/" className='flex items-center gap-2'>
-             <img src={logo} className=' w-[200px] xl:w-[240px]'/>
+           <a href="/" className='flex items-center'>
+             <img src={logo} className='w-[150px] xl:w-[120px]'/>
            </a>
          </div>
 
@@ -21,12 +21,22 @@ const Header = () => {
          <Menu/>
 
 
-        {/* SEARCH - LIGHT DARK THEME */}
+        {/* SEARCH and DARK-LIGHT THEME */}
          <div id='search-and-theme' className='flex items-center gap-2'>
-            <button className='text-[20px] xl:text-[24px] hover:text-slate-500'><FiSearch/></button>
-            <button className='text-[20px] xl:text-[24px] hover:text-slate-500'><GiMoon/></button>
+
+            {/* SEARCH AREA */}
+            <form className='hidden xl:block'>
+              <div className='flex group border-r px-4 py-1 border-black'>
+                <input type='text' className='opacity-0 group-hover:opacity-100 bg-transparent border-b border-slate-800 focus:outline-none w-24 transition duration-500'/>
+                <button className='text-[24px] hover:text-slate-500'><FiSearch/></button>
+              </div>
+            </form>
+
+
+            {/* DARK-LIGHT THEME */}
+            <button className='text-[24px] hover:text-slate-500 border-black'><GiMoon/></button>
             {/* MOBILE MENU */}
-            <button><FaBars className='block text-[20px] xl:hidden hover:text-slate-500'/></button>
+            <button><FaBars className='block text-[24px] xl:hidden hover:text-slate-500'/></button>
          </div>
 
 
