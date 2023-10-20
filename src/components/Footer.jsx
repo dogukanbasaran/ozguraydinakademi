@@ -10,7 +10,7 @@ const Footer = () => {
       {/* Footer Container */}
       <div className='pt-10 mt-10'>
          {/* Top Footer */}
-         <div id='topFooter' className='container mx-auto px-36 flex flex-col lg:flex-row'>
+         <div id='topFooter' className='container mx-auto  flex flex-col lg:flex-row'>
 
               {/* Top Footer - Left Content */}
             <div className='basis-1/3 pl-5 pt-5' id='logo-and-contact-info'>

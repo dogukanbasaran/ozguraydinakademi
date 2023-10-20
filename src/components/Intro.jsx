@@ -2,7 +2,7 @@ import React from 'react'
 
 const Intro = () => {
   return (
-    <div className='relative max-w-[1200px] mx-auto pt-20 bg-neutral-200 rounded-xl'>
+    <div className='relative max-w-[1500px] mx-auto pt-20 bg-neutral-200 rounded-xl'>
         <h1 className='font-heading font-extrabold text-slate-900  text-6xl  tracking-tight text-center'>
             Özgür Aydın Akademi
         </h1>
