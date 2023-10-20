@@ -10,7 +10,7 @@ const Footer = () => {
       {/* Footer Container */}
       <div className='pt-10 mt-10'>
          {/* Top Footer */}
-         <div id='topFooter' className='flex flex-col lg:flex-row'>
+         <div id='topFooter' className='container mx-auto px-36 flex flex-col lg:flex-row'>
 
               {/* Top Footer - Left Content */}
             <div className='basis-1/3 pl-5 pt-5' id='logo-and-contact-info'>
@@ -77,7 +77,7 @@ const Footer = () => {
               {/* E-Bulten Form */}
               <form method='post' autoComplete='off' id='e-bulten-form' className='flex justify-center lg:justify-end pt-5'>
                   <input type='email' className='bg-slate-200 h-[30px] p-4 font-text text-[16px] outline-none' placeholder='E-posta adresiniz'/>
-                  <button className='border px-2 bg-black text-white font-text font-semibold'>ABONE OL</button>
+                  <button className='border px-2 bg-black text-white font-text font-semibold whitespace-nowrap'>ABONE OL</button>
               </form>
 
             </div>

@@ -26,15 +26,16 @@ const Header = () => {
 
             {/* SEARCH AREA */}
             <form className='hidden xl:block'>
-              <div className='flex group border-r px-4 py-1 border-black'>
-                <input type='text' className='opacity-0 group-hover:opacity-100 bg-transparent border-b border-slate-800 focus:outline-none w-24 transition duration-500'/>
+              {/* border-r border-black --> Dark Light Theme eklendiğinde */}
+              <div className='flex group  px-4 py-1'>  
+                <input type='text' className='opacity-0 group-hover:opacity-100 bg-transparent border-b border-slate-800 focus:outline-none w-[150px] transition duration-500'/>
                 <button className='text-[24px] hover:text-slate-500'><FiSearch/></button>
               </div>
             </form>
 
 
             {/* DARK-LIGHT THEME */}
-            <button className='text-[24px] hover:text-slate-500 border-black'><GiMoon/></button>
+            {/* <button className='text-[24px] hover:text-slate-500 border-black'><GiMoon/></button> */}
             {/* MOBILE MENU */}
             <button><FaBars className='block text-[24px] xl:hidden hover:text-slate-500'/></button>
          </div>
