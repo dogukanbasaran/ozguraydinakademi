@@ -6,9 +6,9 @@ import {FaEnvelope} from "react-icons/fa"
 
 const Footer = () => {
   return (
-    <footer id='footer' className='border-t border-black'>
+    <footer id='footer'>
       {/* Footer Container */}
-      <div>
+      <div className='pt-10'>
          {/* Top Footer */}
          <div id='topFooter' className='flex flex-col lg:flex-row'>
 
@@ -37,7 +37,7 @@ const Footer = () => {
 
                       {/* Whatsapp */}
                       <li>
-                              <p className='inline-block'><a href="#" className='flex items-center gap-2 font-text font-semibold hover:text-slate-500'><FaWhatsapp className='text-[20px]'/>Whatsapp</a></p>
+                              <p className='inline-block'><a href="https://wa.me/905306220528" className='flex items-center gap-2 font-text font-semibold hover:text-slate-500'><FaWhatsapp className='text-[20px]'/>Whatsapp</a></p>
                       </li>
 
                        {/* Mail */}

@@ -7,7 +7,7 @@ import {FaBars} from 'react-icons/fa'
 
 const Header = () => {
   return (
-    <header id='header' className='border-b border-black'>
+    <header id='header'>
       <div className='h-[120px] flex pl-10 pr-5  xl:px-5 justify-between xl:justify-center items-center gap-20' id='header-container'>
         {/* LOGO */}
          <div id='logo'>
