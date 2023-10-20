@@ -1,14 +1,14 @@
 import React from 'react'
 import logo from '../assets/logo.png'
 import { FaInstagram, FaLinkedin, FaYoutube, FaWhatsapp} from "react-icons/fa6";
-import {BsTelephoneFill, BsWhatsapp} from "react-icons/bs"
+import {BsTelephoneFill} from "react-icons/bs"
 import {FaEnvelope} from "react-icons/fa"
 
 const Footer = () => {
   return (
     <footer id='footer'>
       {/* Footer Container */}
-      <div className='pt-10'>
+      <div className='pt-10 mt-10'>
          {/* Top Footer */}
          <div id='topFooter' className='flex flex-col lg:flex-row'>
 
