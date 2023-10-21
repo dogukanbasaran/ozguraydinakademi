@@ -86,7 +86,7 @@ const Footer = () => {
          
          {/* Bot Footer */}
          <div id='botFooter' className='p-5'>
-              <p className='font-text font-semibold flex justify-center'>2023 Dogukan Basaran No &copy; Copyright.</p>
+              <p className='font-text flex justify-center'>2023 Dogukan Basaran No &copy; Copyright.</p>
          </div>
       </div>
     </footer>
