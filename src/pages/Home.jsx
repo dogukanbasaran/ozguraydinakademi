@@ -1,10 +1,10 @@
-import Intro from '../components/Intro'
+import IntroSlide from "../components/IntroSlide"
 
 const Home = () => {
 
   return (
     <div className='h-[auto] pt-10'>
-      <Intro/>
+      <IntroSlide/>
     </div>
   )
 }

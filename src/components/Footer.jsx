@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer id='footer'>
       {/* Footer Container */}
-      <div className='pt-10 mt-10'>
+      <div className='pt-10 mt-10 bg-gray-800 text-neutral-300'>
          {/* Top Footer */}
          <div id='topFooter' className='container mx-auto  flex flex-col lg:flex-row'>
 
@@ -18,7 +18,7 @@ const Footer = () => {
                   {/* Top Footer Logo */}
                   <div id='logo' className='flex items-center justify-center lg:justify-start'>
                       <a href="/">
-                        <img src={logo} className='w-[100px]'/>
+                          <h1 className='text-neutral-300 font-extrabold font-heading text-[24px] whitespace-nowrap'>Özgür Aydın Akademi</h1>
                       </a>
                   </div>
 
@@ -27,22 +27,22 @@ const Footer = () => {
                     <ul className='grid  grid-cols-1 mt-5'>
                       {/* Phone 1 */}
                       <li>
-                            <p className='inline-block'><a href="#" className='flex items-center gap-2 font-text font-semibold hover:text-slate-500'><BsTelephoneFill className='text-[20px]'/>0850 000 00 00</a></p>
+                            <p className='inline-block'><a href="#" className='flex items-center gap-2 font-text font-semibold hover:text-slate-500'><BsTelephoneFill className='text-[20px]'/>0534 739 59 78</a></p>
                       </li>
 
-                      {/* Phone 2 */}
+                      {/* Phone 2
                       <li>
                              <p className='inline-block'><a href="#" className='flex items-center gap-2 font-text font-semibold hover:text-slate-500'><BsTelephoneFill className='text-[20px]'/>0850 000 00 00</a></p>
-                      </li>
+                      </li> */}
 
                       {/* Whatsapp */}
                       <li>
-                              <p className='inline-block'><a href="https://wa.me/905306220528" className='flex items-center gap-2 font-text font-semibold hover:text-slate-500'><FaWhatsapp className='text-[20px]'/>Whatsapp</a></p>
+                              <p className='inline-block'><a href="https://wa.me/905347395978" className='flex items-center gap-2 font-text font-semibold hover:text-slate-500'><FaWhatsapp className='text-[20px]'/>Whatsapp</a></p>
                       </li>
 
                        {/* Mail */}
                        <li>
-                            <p className='inline-block'><a href="#" className='flex items-center gap-2 font-text font-semibold hover:text-slate-500'><FaEnvelope className='text-[20px]'/>info@ozguraydinakademi.com.tr</a></p>
+                            <p className='inline-block'><a href="#" className='flex items-center gap-2 font-text font-semibold hover:text-slate-500'><FaEnvelope className='text-[20px]'/>ozguraydinakademi@gmail.com   </a></p>
                       </li>
                     
                     </ul>
@@ -76,8 +76,8 @@ const Footer = () => {
 
               {/* E-Bulten Form */}
               <form method='post' autoComplete='off' id='e-bulten-form' className='flex justify-center lg:justify-end pt-5'>
-                  <input type='email' className='bg-slate-200 h-[30px] p-4 font-text text-[16px] outline-none' placeholder='E-posta adresiniz'/>
-                  <button className='border px-2 bg-black text-white font-text font-semibold whitespace-nowrap'>ABONE OL</button>
+                  <input type='email' className='bg-gray-300 h-[30px] p-4 font-text text-neutral-800 text-[16px] outline-none' placeholder='E-posta adresiniz'/>
+                  <button className='px-2 bg-gray-700 text-neutral-300 font-text font-semibold whitespace-nowrap'>ABONE OL</button>
               </form>
 
             </div>
