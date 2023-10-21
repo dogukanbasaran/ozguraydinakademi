@@ -1,6 +1,6 @@
 import React from 'react'
 import logo from '../assets/logo.png'
-import { FaInstagram, FaLinkedin, FaYoutube, FaWhatsapp} from "react-icons/fa6";
+import { FaInstagram, FaThreads, FaYoutube, FaWhatsapp} from "react-icons/fa6";
 import {BsTelephoneFill} from "react-icons/bs"
 import {FaEnvelope} from "react-icons/fa"
 
@@ -27,7 +27,7 @@ const Footer = () => {
                     <ul className='grid  grid-cols-1 mt-5'>
                       {/* Phone 1 */}
                       <li>
-                            <p className='inline-block'><a href="#" className='flex items-center gap-2 font-text font-semibold hover:text-slate-500'><BsTelephoneFill className='text-[20px]'/>0534 739 59 78</a></p>
+                            <p className='inline-block'><p  className='flex items-center gap-2 font-text font-semibold hover:text-neutral-500 cursor-pointer'><BsTelephoneFill className='text-[20px]'/>0534 739 59 78</p></p>
                       </li>
 
                       {/* Phone 2
@@ -37,12 +37,12 @@ const Footer = () => {
 
                       {/* Whatsapp */}
                       <li>
-                              <p className='inline-block'><a href="https://wa.me/905347395978" className='flex items-center gap-2 font-text font-semibold hover:text-slate-500'><FaWhatsapp className='text-[20px]'/>Whatsapp</a></p>
+                              <p className='inline-block'><a href="https://wa.me/905347395978" className='flex items-center gap-2 font-text font-semibold hover:text-neutral-500'><FaWhatsapp className='text-[20px]'/>Whatsapp</a></p>
                       </li>
 
                        {/* Mail */}
                        <li>
-                            <p className='inline-block'><a href="#" className='flex items-center gap-2 font-text font-semibold hover:text-slate-500'><FaEnvelope className='text-[20px]'/>ozguraydinakademi@gmail.com   </a></p>
+                            <p className='inline-block'><a href='mailto:ozguraydinakademi@gmail.com' className='flex items-center gap-2 font-text font-semibold hover:text-neutral-500'><FaEnvelope className='text-[20px]'/>ozguraydinakademi@gmail.com</a></p>
                       </li>
                     
                     </ul>
@@ -59,9 +59,9 @@ const Footer = () => {
               </div>
               {/* Social Media Link */}
               <div className='flex gap-5 justify-center pt-5'>
-                  <a href="https://www.instagram.com/ozguraydinakademi/" className='text-[24px] hover:text-slate-500'><FaInstagram/></a>
-                  <a href="#" className='text-[24px] hover:text-slate-500'><FaYoutube/></a>
-                  <a href="#" className='text-[24px] hover:text-slate-500'><FaLinkedin/></a>
+                  <a href="https://www.instagram.com/ozguraydinakademi/" className='text-[24px] hover:text-neutral-500'><FaInstagram/></a>
+                  <a href="https://www.youtube.com/c/MathFlixakademi" className='text-[24px] hover:text-neutral-500'><FaYoutube/></a>
+                  <a href="https://www.threads.net/@ozguraydinakademi" className='text-[24px] hover:text-neutral-500'><FaThreads/></a>
               </div>
 
             </div>
@@ -76,8 +76,8 @@ const Footer = () => {
 
               {/* E-Bulten Form */}
               <form method='post' autoComplete='off' id='e-bulten-form' className='flex justify-center lg:justify-end pt-5'>
-                  <input type='email' className='bg-gray-300 h-[30px] p-4 font-text text-neutral-800 text-[16px] outline-none' placeholder='E-posta adresiniz'/>
-                  <button className='px-2 bg-gray-700 text-neutral-300 font-text font-semibold whitespace-nowrap'>ABONE OL</button>
+                  <input type='email' className='bg-gray-300 h-[30px] p-4 font-text text-neutral-800 text-[16px] outline-none rounded-md rounded-r-none' placeholder='E-posta adresiniz'/>
+                  <button className='px-2 bg-gray-300 border-l border-gray-800 text-neutral-800 font-text font-semibold whitespace-nowrap rounded-r-md'>ABONE OL</button>
               </form>
 
             </div>
