@@ -1,15 +1,12 @@
 import React from 'react'
-import logo from '../assets/logo.png'
 import Menu from './Menu'
-import {FiSearch} from 'react-icons/fi'
-import {GiMoon} from 'react-icons/gi'
-import {FaBars} from 'react-icons/fa'
+
 
 const Header = () => {
   return (
     <header id='header'>
-      <div className='container mx-auto border'>
-            <nav className='h-[120px] flex justify-between items-center gap-8'>
+      <div className='lg:container mx-auto'>
+            <nav className='h-[120px] flex justify-between items-center gap-8 px-5'>
               {/* LOGO */}
               <div id='logo'>
                 <a href="/">
