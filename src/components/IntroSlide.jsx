@@ -35,8 +35,8 @@ const Intro = () => {
                   <div className='w-[220px] h-[150px] left-0 top-0 absolute' style={{opacity:1, transform: 'none'}}>
 
                       {/* OZGUR AYDIN  */}
-                     <div className='w-[200px] h-[100px] left-0 top-0 absolute rounded-md border-[0.5px] backdrop-blur-lg bg-gray-100'></div>
-                     <div className='w-[180px] flex items-center justify-center h-[80px]  rounded-[8px] top-[10px] left-[10px] absolute border bg-white cursor-pointer hover:scale-105 duration-500'>
+                     <div className='w-[200px] h-[100px] left-5 top-0 absolute rounded-md border-[0.5px] backdrop-blur-lg bg-gray-100'></div>
+                     <div className='w-[180px] flex items-center justify-center h-[80px]  rounded-[8px] top-[10px] left-[30px] absolute border bg-white cursor-pointer hover:scale-105 duration-500'>
                          <div className='flex flex-row justify-center items-center space-y-1 space-x-1 left-[10px] absolute  text-neutral-800'>
                           <div>
                                 <img src={instructorPhoto} className='rounded-md w-[60px] h-[60px]'/>
