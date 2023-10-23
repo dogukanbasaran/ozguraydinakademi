@@ -1,5 +1,4 @@
 import React from 'react'
-import logo from '../assets/logo.png'
 import { FaInstagram, FaThreads, FaYoutube, FaWhatsapp} from "react-icons/fa6";
 import {BsTelephoneFill} from "react-icons/bs"
 import {FaEnvelope} from "react-icons/fa"

@@ -1,36 +1,71 @@
 import React from 'react'
 import introPhoto from '../assets/carousel/1.png'
-import introPhoto2 from '../assets/carousel/2.png'
+import layout1 from '../assets/Layout/layout.png'
+import instructorPhoto from '../assets/instructor/eyupserdarkucuk.jpg'
+
 
 const Intro = () => {
   return (
 
-    <section id='introduction'>
-      <div className='container grid grid-cols-3 mx-auto h-[auto] py-10'>
-
-      <div id='intro-left' className='flex justify-start'>
-          <img src={introPhoto2} className='w-[400px] h-[400px] ml-10'/>
-
-        </div>
-
-        <div id='intro-mid'>
-              <div id='intro-text'>
-                    <h1 className='font-heading font-bold text-[48px] text-neutral-800 text-center mb-10'>Eğitim Platformu</h1>
-                    <p className='font-text text-[16]px] text-neutral-800 text-center mx-12 mb-10'>Lorem ipsum dolor sit amet consectetur adipisicing elit. In delectus, porro enim voluptatum commodi magnam debitis. Reprehenderit voluptate rerum magni. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi molestias ab commodi sunt temporibus illum, voluptas vitae ullam cumque fugit laboriosam et nihil. Expedita amet reprehenderit dolorum minus veniam? Veritatis earum mollitia nam unde architecto, sint molestiae! Quis labore officiis non, molestiae eum obcaecati minus molestias sunt quod id omnis.</p>  
+    <section id='introduction' className='flex flex-col space-y-12 md:space-y-0 md:flex-row h-full w-full md:max-w-7xl px-5  mb-20 mx-auto justify-center'>
+        <div id='intro-left' className='flex flex-col mt-24 md:mt-12 w-full text-center items-start justify-start md:text-start md:w-[555px]'>
+              <div id='intro-text' className='flex flex-col w-full md:w-[585px]'>
+                <span className='font-heading text-neutral-800 text-[32px] md:text-[64px] font-semibold'>Eğitim Platformu</span>
+                <span className='font-text px-4 md:w-[514px] md:px-0 mt-4 text-[16px] md:text-[24px] font-medium'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, magnam? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, provident.</span>
               </div>
-              <div id='intro-btn' className='flex justify-center gap-2'>
+              <div id='intro-btn' className='flex mt-6 w-full justify-center'>
                     <button className='bg-gray-800 rounded-md text-neutral-300 font-text px-8 sm:px-12 py-2 hover:bg-gray-300 hover:text-neutral-800 duration-300'>Paketlere Göz At</button>
-                    <button className='bg-gray-800 rounded-md text-neutral-300 font-text  px-8 sm:px-12 py-2 hover:bg-gray-300 hover:text-neutral-800 duration-300'>İletişime Geç</button>
               </div>
         </div>
 
-        <div id='intro-right' className='flex justify-end'>
-          <img src={introPhoto} className='w-[400px] h-[400px]'/>
+        <div id='intro-right' className='flex flex-col w-full md:ml-24 lg:ml-0 ml-2 md:w-3/4'>
+            <div className='md:flex hidden w-full relative'>
+                  {/* INTRO PHOTO */}
+                  <div className='w-[460px] h-[345px] left-[120px] top-[60px] absolute'>
+                      <img src={introPhoto} className='w-[full] h-[auto] left-[0px] top-[-151px] absolute z-10'/>
+                  </div>
+                  {/* INTRO PHOTO LAYOUT */}
+                  <div className='w-[460px] h-[150px] left-[120px]  top-[80px] absolute'>
+                    <img src={layout1}/>
+                  </div>
 
+                  {/* INTRO TEXTS */}
+                  <div className='w-[220px] h-[150px] left-0 top-0 absolute' style={{opacity:1, transform: 'none'}}>
+
+                      {/* OZGUR AYDIN  */}
+                     <div className='w-[220px] h-[100px] left-0 top-0 absolute rounded-md border-[0.5px] backdrop-blur-lg bg-gray-100'></div>
+                     <div className='w-[180px] flex items-center justify-center h-[80px]  rounded-[8px] top-[10px] left-[20px] absolute border bg-white cursor-pointer hover:scale-105 duration-500'>
+                         <div className='flex flex-row justify-center items-center space-y-1 space-x-1 left-[10px] absolute  text-neutral-800'>
+                          <div>
+                                <img src={instructorPhoto} className='rounded-md w-[60px] h-[60px]'/>
+                          </div>
+                          <div>
+                            <h2 className='text-[16px] font-heading font-semibold whitespace-nowrap'>Özgür Aydın</h2>
+                            <h3 className=' text-[14px] text-center font-text'>Matematik</h3>
+                          </div>
+
+                         </div>
+                     </div>
+                     
+                     {/* EYUP SERDAR */}
+                     <div className='w-[220px] h-[100px] left-[520px] top-[100px] absolute rounded-md border-[0.5px] backdrop-blur-lg bg-gray-100'></div>
+                     <div className='w-[180px] flex items-center justify-center h-[80px]  rounded-[8px] top-[110px] left-[540px] absolute border bg-white cursor-pointer hover:scale-105 duration-500'>
+                         <div className='flex flex-row justify-center items-center space-y-1 space-x-1 left-[10px] absolute  text-neutral-800'>
+                          <div>
+                                <img src={instructorPhoto} className='rounded-md w-[60px] h-[60px]'/>
+                          </div>
+                          <div>
+                            <h2 className='text-[16px] font-heading font-semibold whitespace-nowrap'>Eyüp Serdar</h2>
+                            <h3 className=' text-[14px] text-center font-text'>İngilizce</h3>
+                          </div>
+
+                         </div>
+                     </div>
+                     
+                  </div>
+            </div>
         </div>
 
-
-      </div>
     </section>
   )
 }
