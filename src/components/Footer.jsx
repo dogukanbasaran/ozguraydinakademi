@@ -17,7 +17,7 @@ const Footer = () => {
                   {/* Top Footer Logo */}
                   <div id='logo' className='flex items-center justify-center lg:justify-start'>
                       <a href="/">
-                          <h1 className='text-neutral-300 font-extrabold font-heading text-[24px] whitespace-nowrap'>Özgür Aydın Akademi</h1>
+                          <h1 className='text-neutral-300 font-extrabold font-heading text-[20px] whitespace-nowrap'>Özgür Aydın Akademi</h1>
                       </a>
                   </div>
 

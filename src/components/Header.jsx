@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header id='header'>
       <div className='lg:container mx-auto'>
-            <nav className='h-[120px] flex justify-between items-center gap-8 px-5'>
+            <nav className='h-[120px] flex justify-between items-center gap-8 px-1 sm:px-5'>
               {/* LOGO */}
               <div id='logo' className='lg:px-12'>
                 <a href="/">

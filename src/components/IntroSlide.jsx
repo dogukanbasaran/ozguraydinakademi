@@ -8,9 +8,10 @@ const Intro = () => {
   return (
 
     <section id='introduction' className='flex flex-col space-y-12 md:space-y-0 md:flex-row h-full w-full md:max-w-7xl px-5  mb-20 mx-auto justify-center'>
-        <div id='intro-left' className='flex flex-col mt-24 md:mt-12 w-full text-center items-start justify-start md:text-start md:w-[555px]'>
+         {/* INTRO LEFT CONTENT */}
+        <div id='intro-left' className='flex flex-col mt-12 w-full text-center justify-center items-center xl:items-start xl:justify-start  md:w-[555px]'>
               <div id='intro-text' className='flex flex-col w-full md:w-[585px]'>
-                <span className='font-heading text-neutral-800 text-[32px] md:text-[64px] font-semibold'>Eğitim Platformu</span>
+                <span className='font-heading text-neutral-800 text-[32px] md:text-[48px] font-semibold'>Eğitim Platformu</span>
                 <span className='font-text px-4 md:w-[514px] md:px-0 mt-4 text-[16px] md:text-[24px] font-medium'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, magnam? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, provident.</span>
               </div>
               <div id='intro-btn' className='flex mt-6 w-full justify-center'>
@@ -18,8 +19,9 @@ const Intro = () => {
               </div>
         </div>
 
-        <div id='intro-right' className='flex flex-col w-full md:ml-24 lg:ml-0 ml-2 md:w-3/4'>
-            <div className='md:flex hidden w-full relative'>
+        {/* INTRO RIGHT CONTENT */}
+        <div id='intro-right' className='hidden xl:flex xl:flex-col w-full md:ml-24 lg:ml-0 ml-2 md:w-3/4'>
+            <div className='hidden xl:block w-full relative'>
                   {/* INTRO PHOTO */}
                   <div className='w-[460px] h-[345px] left-[120px] top-[60px] absolute'>
                       <img src={introPhoto} className='w-[full] h-[auto] left-[0px] top-[-151px] absolute z-10'/>
@@ -33,8 +35,8 @@ const Intro = () => {
                   <div className='w-[220px] h-[150px] left-0 top-0 absolute' style={{opacity:1, transform: 'none'}}>
 
                       {/* OZGUR AYDIN  */}
-                     <div className='w-[220px] h-[100px] left-0 top-0 absolute rounded-md border-[0.5px] backdrop-blur-lg bg-gray-100'></div>
-                     <div className='w-[180px] flex items-center justify-center h-[80px]  rounded-[8px] top-[10px] left-[20px] absolute border bg-white cursor-pointer hover:scale-105 duration-500'>
+                     <div className='w-[200px] h-[100px] left-0 top-0 absolute rounded-md border-[0.5px] backdrop-blur-lg bg-gray-100'></div>
+                     <div className='w-[180px] flex items-center justify-center h-[80px]  rounded-[8px] top-[10px] left-[10px] absolute border bg-white cursor-pointer hover:scale-105 duration-500'>
                          <div className='flex flex-row justify-center items-center space-y-1 space-x-1 left-[10px] absolute  text-neutral-800'>
                           <div>
                                 <img src={instructorPhoto} className='rounded-md w-[60px] h-[60px]'/>
@@ -48,8 +50,8 @@ const Intro = () => {
                      </div>
                      
                      {/* EYUP SERDAR */}
-                     <div className='w-[220px] h-[100px] left-[520px] top-[100px] absolute rounded-md border-[0.5px] backdrop-blur-lg bg-gray-100'></div>
-                     <div className='w-[180px] flex items-center justify-center h-[80px]  rounded-[8px] top-[110px] left-[540px] absolute border bg-white cursor-pointer hover:scale-105 duration-500'>
+                     <div className='w-[200px] h-[100px] left-[480px] top-[0px] absolute rounded-md border-[0.5px] backdrop-blur-lg bg-gray-100'></div>
+                     <div className='w-[180px] flex items-center justify-center h-[80px]  rounded-[8px] top-[10px] left-[490px] absolute border bg-white cursor-pointer hover:scale-105 duration-500'>
                          <div className='flex flex-row justify-center items-center space-y-1 space-x-1 left-[10px] absolute  text-neutral-800'>
                           <div>
                                 <img src={instructorPhoto} className='rounded-md w-[60px] h-[60px]'/>
