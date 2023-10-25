@@ -1,4 +1,5 @@
 import IntroSlide from "../components/IntroSlide"
+import Map from "../components/Map"
 
 
 const Home = () => {

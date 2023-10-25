@@ -2,6 +2,7 @@ import React from 'react'
 import introPhoto from '../assets/carousel/1.png'
 import layout1 from '../assets/Layout/layout.png'
 import instructorPhoto from '../assets/instructor/eyupserdarkucuk.jpg'
+import { Link } from 'react-router-dom'
 
 
 const Intro = () => {
@@ -15,7 +16,9 @@ const Intro = () => {
                 <span className='font-text px-4 md:w-[514px] md:px-0 mt-4 text-[16px] md:text-[24px] font-medium'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, magnam? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, provident.</span>
               </div>
               <div id='intro-btn' className='flex mt-6 w-full justify-center'>
+                  <Link to="/packages">
                     <button className='bg-gray-800 rounded-md text-neutral-300 font-text px-8 sm:px-12 py-2 hover:bg-gray-300 hover:text-neutral-800 duration-300'>Paketlere Göz At</button>
+                  </Link>
               </div>
         </div>
 
@@ -37,7 +40,8 @@ const Intro = () => {
                       {/* OZGUR AYDIN  */}
                      <div className='w-[200px] h-[100px] left-5 top-0 absolute rounded-md border-[0.5px] backdrop-blur-lg bg-gray-100'></div>
                      <div className='w-[180px] flex items-center justify-center h-[80px]  rounded-[8px] top-[10px] left-[30px] absolute border bg-white cursor-pointer hover:scale-105 duration-500'>
-                         <div className='flex flex-row justify-center items-center space-y-1 space-x-1 left-[10px] absolute  text-neutral-800'>
+                        <Link to="/ozguraydin">
+                         <div className='flex flex-row justify-center items-center space-y-1 space-x-1 left-[10px] bottom-[10px] absolute  text-neutral-800'>
                           <div>
                                 <img src={instructorPhoto} className='rounded-md w-[60px] h-[60px]'/>
                           </div>
@@ -47,21 +51,25 @@ const Intro = () => {
                           </div>
 
                          </div>
+                         </Link>
                      </div>
                      
                      {/* EYUP SERDAR */}
                      <div className='w-[200px] h-[100px] left-[480px] top-[0px] absolute rounded-md border-[0.5px] backdrop-blur-lg bg-gray-100'></div>
                      <div className='w-[180px] flex items-center justify-center h-[80px]  rounded-[8px] top-[10px] left-[490px] absolute border bg-white cursor-pointer hover:scale-105 duration-500'>
-                         <div className='flex flex-row justify-center items-center space-y-1 space-x-1 left-[10px] absolute  text-neutral-800'>
-                          <div>
-                                <img src={instructorPhoto} className='rounded-md w-[60px] h-[60px]'/>
-                          </div>
-                          <div>
-                            <h2 className='text-[16px] font-heading font-semibold whitespace-nowrap'>Eyüp Serdar</h2>
-                            <h3 className=' text-[14px] text-center font-text'>İngilizce</h3>
-                          </div>
+                         
+                          <Link to="/eyupserdar">
+                            <div className='flex flex-row justify-center items-center space-y-1 space-x-1 left-[10px] bottom-[10px] absolute  text-neutral-800'>
+                              <div>
+                                    <img src={instructorPhoto} className='rounded-md w-[60px] h-[60px]'/>
+                              </div>
+                              <div>
+                                <h2 className='text-[16px] font-heading font-semibold whitespace-nowrap'>Eyüp Serdar</h2>
+                                <h3 className=' text-[14px] text-center font-text'>İngilizce</h3>
+                              </div>
 
-                         </div>
+                            </div>
+                         </Link>
                      </div>
                      
                   </div>
