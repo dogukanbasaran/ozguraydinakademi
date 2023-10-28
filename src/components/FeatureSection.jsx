@@ -12,7 +12,7 @@ const FeatureSection = () => {
 
             <div className='rounded-md relative max-w-[350px]'>
                 <img src={photo1} className='rounded-xl mb-20'/>
-                <div className='z-50 rounded-2xl border absolute bg-white w-3/4 left-[48px] top-[145px] sm:top-[170px] lg:top-[180px] xl:top-[140px] 2xl:top-[180px] shadow-xl'>
+                <div className='z-50 rounded-2xl border absolute bg-white w-full sm:w-3/4 sm:left-[48px] top-[145px] sm:top-[170px] lg:top-[180px] xl:top-[140px] 2xl:top-[180px] shadow-xl'>
                     <h3 className='text-center text-neutral-800 text-[24px] font-heading font-bold cursor-pointer'>Birebir Özel Ders</h3>
                     <p className='hidden text-sm text-center px-2 font-text'>Bizde sınıf ve tahta yok. Yalnızca öğrenci ve profesyonel öğretmen var. Tüm derslerimiz bire bir özel ders formatıyla yapılır. Bizde saat yok. Ders, öğrenci konuyu anlayınca biter. Ücretsiz özel ders randevusu için tıklayınız.</p>
                     <span><MdExpandMore className='text-[40px] w-full cursor-pointer'/></span>
@@ -21,7 +21,17 @@ const FeatureSection = () => {
 
             <div className='rounded-md relative max-w-[350px]'>
                 <img src={photo1} className='rounded-xl mb-20'/>
-                <div className='z-50 rounded-2xl border absolute bg-white w-3/4 left-[48px] top-[170px] lg:top-[180px] xl:top-[140px] 2xl:top-[180px] shadow-xl'>
+                <div className='z-50 rounded-2xl border absolute bg-white w-full sm:w-3/4 sm:left-[48px] top-[145px] sm:top-[170px] lg:top-[180px] xl:top-[140px] 2xl:top-[180px] shadow-xl'>
+                    <h3 className='text-center text-neutral-800 text-[24px] font-heading font-bold cursor-pointer'>Birebir Özel Ders</h3>
+                    <p className='hidden text-sm text-center px-2 font-text'>Bizde sınıf ve tahta yok. Yalnızca öğrenci ve profesyonel öğretmen var. Tüm derslerimiz bire bir özel ders formatıyla yapılır. Bizde saat yok. Ders, öğrenci konuyu anlayınca biter. Ücretsiz özel ders randevusu için tıklayınız.</p>
+                    <span><MdExpandMore className='text-[40px] w-full cursor-pointer'/></span>
+                </div>
+            </div>
+
+
+            <div className='rounded-md relative max-w-[350px]'>
+                <img src={photo1} className='rounded-xl mb-20'/>
+                <div className='z-50 rounded-2xl border absolute bg-white w-full sm:w-3/4 sm:left-[48px] top-[145px] sm:top-[170px] lg:top-[180px] xl:top-[140px] 2xl:top-[180px] shadow-xl'>
                     <h3 className='text-center text-neutral-800 text-[24px] font-heading font-bold cursor-pointer'>Birebir Özel Ders</h3>
                     <p className='hidden text-sm text-center px-2 font-text'>Bizde sınıf ve tahta yok. Yalnızca öğrenci ve profesyonel öğretmen var. Tüm derslerimiz bire bir özel ders formatıyla yapılır. Bizde saat yok. Ders, öğrenci konuyu anlayınca biter. Ücretsiz özel ders randevusu için tıklayınız.</p>
                     <span><MdExpandMore className='text-[40px] w-full cursor-pointer'/></span>
@@ -30,21 +40,13 @@ const FeatureSection = () => {
 
             <div className='rounded-md relative max-w-[350px]'>
                 <img src={photo1} className='rounded-xl mb-20'/>
-                <div className='z-50 rounded-2xl border absolute bg-white w-3/4 left-[48px] top-[170px] lg:top-[180px] xl:top-[140px] 2xl:top-[180px] shadow-xl'>
+                <div className='z-50 rounded-2xl border absolute bg-white w-full sm:w-3/4 sm:left-[48px] top-[145px] sm:top-[170px] lg:top-[180px] xl:top-[140px] 2xl:top-[180px] shadow-xl'>
                     <h3 className='text-center text-neutral-800 text-[24px] font-heading font-bold cursor-pointer'>Birebir Özel Ders</h3>
                     <p className='hidden text-sm text-center px-2 font-text'>Bizde sınıf ve tahta yok. Yalnızca öğrenci ve profesyonel öğretmen var. Tüm derslerimiz bire bir özel ders formatıyla yapılır. Bizde saat yok. Ders, öğrenci konuyu anlayınca biter. Ücretsiz özel ders randevusu için tıklayınız.</p>
                     <span><MdExpandMore className='text-[40px] w-full cursor-pointer'/></span>
                 </div>
             </div>
 
-            <div className='rounded-md relative max-w-[350px]'>
-                <img src={photo1} className='rounded-xl mb-20'/>
-                <div className='z-50 rounded-2xl border absolute bg-white w-3/4 left-[48px] top-[170px] lg:top-[180px] xl:top-[140px] 2xl:top-[180px] shadow-xl'>
-                    <h3 className='text-center text-neutral-800 text-[24px] font-heading font-bold cursor-pointer'>Birebir Özel Ders</h3>
-                    <p className='hidden text-sm text-center px-2 font-text'>Bizde sınıf ve tahta yok. Yalnızca öğrenci ve profesyonel öğretmen var. Tüm derslerimiz bire bir özel ders formatıyla yapılır. Bizde saat yok. Ders, öğrenci konuyu anlayınca biter. Ücretsiz özel ders randevusu için tıklayınız.</p>
-                    <span><MdExpandMore className='text-[40px] w-full cursor-pointer'/></span>
-                </div>
-            </div>
 
            
 
