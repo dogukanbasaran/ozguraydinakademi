@@ -4,7 +4,7 @@ import {MdExpandMore} from 'react-icons/md'
 
 const FeatureSection = () => {
   return (
-    <section className='my-24'>
+    <section className=' h-[auto] md:h-[700px] xl:h-[400px]'>
 
         <h2 className='text-center text-[32px] md:text-[48px] font-semibold font-heading text-neutral-800'>Neden Biz?</h2>
 
@@ -32,7 +32,7 @@ const FeatureSection = () => {
                 <img src={photo1} className='rounded-xl mb-20'/>
                 <div className='z-50 rounded-2xl border absolute bg-white w-full sm:w-3/4 sm:left-[44.5px] top-[145px] sm:top-[170px] lg:top-[180px] xl:top-[140px] 2xl:top-[180px] shadow-xl'>
                     <h3 className='text-center text-neutral-800 text-[24px] font-heading font-bold cursor-pointer'>Birebir Özel Ders</h3>
-                    <p className='text-sm text-center px-2 font-text'>Bizde sınıf ve tahta yok. Yalnızca öğrenci ve profesyonel öğretmen var. Tüm derslerimiz bire bir özel ders formatıyla yapılır. Bizde saat yok. Ders, öğrenci konuyu anlayınca biter. Ücretsiz özel ders randevusu için tıklayınız.</p>
+                    <p className='hidden text-sm text-center px-2 font-text'>Bizde sınıf ve tahta yok. Yalnızca öğrenci ve profesyonel öğretmen var. Tüm derslerimiz bire bir özel ders formatıyla yapılır. Bizde saat yok. Ders, öğrenci konuyu anlayınca biter. Ücretsiz özel ders randevusu için tıklayınız.</p>
                     <span><MdExpandMore className='text-[40px] w-full cursor-pointer'/></span>
                 </div>
             </div>
