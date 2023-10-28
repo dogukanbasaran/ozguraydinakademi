@@ -8,7 +8,7 @@ const FeatureSection = () => {
 
         <h2 className='text-center text-[32px] md:text-[48px] font-semibold font-heading text-neutral-800'>Neden Biz?</h2>
 
-        <div className='container py-10 h-[auto] mx-auto flex flex-col justify-center items-center md:grid md:grid-cols-2 md:grid-rows-2 xl:grid-cols-4 px-10 gap-4 border border-black'>
+        <div className='container py-10 h-[auto] mx-auto flex flex-col justify-center items-center md:grid md:grid-cols-2 md:grid-rows-2 xl:grid-cols-4 px-10 gap-4'>
 
             <div className='rounded-md relative max-w-[350px]'>
                 <img src={photo1} className='rounded-xl mb-20'/>
