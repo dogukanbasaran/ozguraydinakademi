@@ -17,11 +17,10 @@ const MobileMenu = () => {
         <button onClick={toggleMenu}><FaBars className='block lg:hidden text-[24px] hover:text-slate-500'/></button>
   
         {menuOpen && (
-        <div className="lg:hidden flex flex-col gap-2 absolute top-10 right-0 bg-gray-800 text-neutral-300 text-center rounded-md p-5">
-                <NavLink to="/">Ana Sayfa</NavLink>
-                <NavLink to="/about">Hakkında</NavLink>
-                <NavLink to="/packages">Paketler</NavLink>
-                <NavLink to="/contact">Iletisim</NavLink>
+        <div className="lg:hidden flex flex-col gap-2 absolute top-10 right-0 bg-gray-800 text-neutral-300 text-center rounded-md">
+                <NavLink to="/" className={"hover:bg-gray-600  px-5 py-2"}>Ana Sayfa</NavLink>
+                <NavLink to="/packages" className={"hover:bg-gray-600  px-5 py-2"}>Paketler</NavLink>
+                <NavLink to="/contact" className={"hover:bg-gray-600  px-5 py-2"}>Iletisim</NavLink>
 
         </div>
       )}
