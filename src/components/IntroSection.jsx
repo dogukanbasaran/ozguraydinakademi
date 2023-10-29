@@ -12,7 +12,7 @@ const Intro = () => {
          {/* INTRO LEFT CONTENT */}
         <div id='intro-left' className='flex flex-col mt-12 w-full text-center justify-center items-center xl:items-start xl:justify-start  md:w-[555px]'>
               <div id='intro-text' className='flex flex-col w-full md:w-[585px]'>
-                <span className='font-heading text-neutral-800 text-[32px] md:text-[48px] font-semibold'>Eğitim Platformu</span>
+                <span className='font-heading text-neutral-800 text-[32px] md:text-[48px] font-bold'>EĞİTİM PLATFORMU</span>
                 <span className='font-text px-4 md:w-[514px] md:px-0 mt-4 text-[16px] md:text-[24px] font-medium'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, magnam? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, provident.</span>
               </div>
               <div id='intro-btn' className='flex mt-6 w-full justify-center'>

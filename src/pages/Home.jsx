@@ -1,6 +1,7 @@
 import IntroSection from "../components/IntroSection"
 import FeatureSection from "../components/FeatureSection"
 import FeedBacksSection from "../components/FeedBacksSection"
+import ContactSection from "../components/ContactSection"
 
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
       <IntroSection/>
       <FeatureSection/>
       <FeedBacksSection/>
+      <ContactSection/>
     </div>
   )
 }
