@@ -6,7 +6,7 @@ import StickyContact from '../components/StickyContact'
 
 const SharedLayout = () => {
   return (
-    <div className='relative'>
+    <div className=''>
         <Header/>
         <Outlet/>
         <Footer/>
