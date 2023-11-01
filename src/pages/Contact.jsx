@@ -3,7 +3,7 @@ import ContactSection from '../components/ContactSection'
 
 const Contact = () => {
   return (
-    <div className='h-[auto] pb-[165px]'>
+    <div className='h-[auto] pt-20'>
 
       <ContactSection/>
       

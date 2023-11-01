@@ -3,11 +3,11 @@ import React from 'react'
 const ContactSection = () => {
   return (
     <section>
-            <div className='container mx-auto'>
+            <div className='container mx-auto bg-gray-100'>
                 <div className='flex flex-col lg:flex-row sm:justify-center'>
                     <div className='m-5 flex flex-col sm:justify-center sm:items-center'>
                         <h3 className='font-text font-bold text-center text-[32px] md:text-[48px]'>İLETİŞİM FORMU</h3>
-                        <form className='mt-5 bg-gray-100 p-10 border-[0.5px] rounded-md'>
+                        <form className='mt-5 p-10 border-[0.5px] rounded-md bg-gray-200'>
                             <div className='grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2'>
                             {/* Ad */}
                             <div className='col-span-2 sm:col-span-1'>
@@ -67,7 +67,7 @@ const ContactSection = () => {
                     </div>
 
                     <div className='m-5'>
-                        <div className=' md:mx-[120px] lg:m-[95px] bg-gray-100 p-5 rounded-md border-[0.5px]'>
+                        <div className=' md:mx-[120px] lg:m-[95px] bg-gray-200 p-5 rounded-md border-[0.5px]'>
                             <h3 className='font-text font-bold text-[24px] text-center mb-5 whitespace-nowrap'>YA DA BİZİ ARAYIN!</h3>
                             <p className='text-center font-text font-bold text-[32px]'>+90 534 739 59 78</p>
                             <p className='text-center font-text text-[16px] mt-5'>Bizi dilediğin an arayabilir veya mesaj bırakabilirsin.</p>

@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer id='footer'>
       {/* Footer Container */}
-      <div className='pt-10 mt-10 bg-gray-800 text-neutral-300'>
+      <div className='pt-10  bg-gray-800 text-neutral-300'>
          {/* Top Footer */}
          <div id='topFooter' className='container mx-auto  flex flex-col lg:flex-row'>
 
@@ -78,7 +78,7 @@ const Footer = () => {
          </div>
          
          {/* Bot Footer */}
-         <div id='botFooter' className='p-5'>
+         <div id='botFooter' className='p-5 pb-[60px] sm:pb-0'>
               <p className='font-text flex justify-center'>2023 Dogukan Basaran No &copy; Copyright.</p>
          </div>
       </div>

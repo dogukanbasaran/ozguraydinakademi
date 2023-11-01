@@ -13,7 +13,7 @@ const Intro = () => {
         <div id='intro-left' className='flex flex-col mt-12 w-full text-center justify-center items-center'>
               <div id='intro-text' className='flex flex-col w-full'>
                 <h2 className='font-heading font-semibold text-[32px] md:text-[48px]'>EĞİTİM PLATFORMU</h2>
-                <span className='font-text px-6 sm:px-24 lg:px-32 xl:px-0 mt-4 text-[18px] md:text-[24px] font-medium'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, magnam? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, provident.</span>
+                <span className='font-text px-6 sm:px-24 lg:px-32 xl:px-0 mt-4 text-[18px] md:text-[24px] font-medium'>Özgür Aydın Akademi, öğrencilere uzman öğretmenler eşliğinde özelleştirilmiş dersler, interaktif öğrenme materyalleri ve sınav hazırlığı imkanı sunar. Akademik başarıya giden yolda bizimle adım atın!</span>
               </div>
               <div id='intro-btn' className='flex mt-6 w-full justify-center'>
                   <Link to="/packages">
