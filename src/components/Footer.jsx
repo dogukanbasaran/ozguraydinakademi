@@ -27,7 +27,7 @@ const Footer = () => {
                     <ul className='grid  grid-cols-1 mt-5'>
                       {/* Phone 1 */}
                       <li>
-                            <p className='inline-block'><p  className='flex items-center gap-2 font-text font-semibold hover:text-neutral-500 cursor-pointer'><BsTelephoneFill className='text-[20px]'/>0534 739 59 78</p></p>
+                            <p className='inline-block'><a  className='flex items-center gap-2 font-text font-semibold hover:text-neutral-500 cursor-pointer'><BsTelephoneFill className='text-[20px]'/>0534 739 59 78</a></p>
                       </li>
 
                       {/* Phone 2
@@ -78,7 +78,7 @@ const Footer = () => {
          </div>
          
          {/* Bot Footer */}
-         <div id='botFooter' className='p-5 pb-[60px] sm:pb-0'>
+         <div id='botFooter' className='p-5 pb-[60px] sm:pb-[10px]'>
               <p className='font-text flex justify-center'>2023 Dogukan Basaran No &copy; Copyright.</p>
          </div>
       </div>
