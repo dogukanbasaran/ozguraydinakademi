@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 const Intro = () => {
   return (
 
-    <section id='introduction' className='flex flex-col space-y-12 md:space-y-0 md:flex-row h-full w-full md:max-w-7xl px-5  mb-[180px] mt-[100px] sm:mt-[150px] mx-auto justify-center'>
+    <section id='introduction' className='flex flex-col space-y-12 md:space-y-0 md:flex-row h-full w-full md:max-w-7xl px-5  mb-[190px] sm:mb-[180px] mt-[100px] sm:mt-[150px] mx-auto justify-center'>
          {/* INTRO LEFT CONTENT */}
         <div id='intro-left' className='flex flex-col mt-12 w-full text-center justify-center items-center'>
               <div id='intro-text' className='flex flex-col w-full'>

@@ -23,7 +23,7 @@ const MobileMenu = () => {
         <div className="md:hidden flex flex-col gap-2 absolute top-14 right-0 border bg-gray-800 text-neutral-300 text-center rounded-md">
                 <NavLink to="/" className={"hover:bg-gray-600  px-5 py-2"}>Ana Sayfa</NavLink>
                 <NavLink to="/packages" className={"hover:bg-gray-600  px-5 py-2"}>Paketler</NavLink>
-                <NavLink to="/contact" className={"hover:bg-gray-600  px-5 py-2"}>Iletisim</NavLink>
+                <NavLink to="/contact" className={"hover:bg-gray-600  px-5 py-2"}>İletİşİm</NavLink>
 
         </div>
       )}
