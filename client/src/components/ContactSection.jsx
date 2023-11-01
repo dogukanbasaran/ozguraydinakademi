@@ -1,13 +1,35 @@
 import React from 'react'
 
 const ContactSection = () => {
+
+
+    // const contactForm = document.getElementById("contact-form");
+
+    // contactForm.addEventListener("submit", function(e) {
+    //     e.preventDefault();
+    // })
+
+    // const formData = new FormData(contactForm);
+
+    // const jsonData = {};
+
+    // formData.forEach((value, key) => {
+    //     jsonData[key] = value;
+
+    // })
+
+
+    
+
   return (
     <section>
             <div className='bg-gray-100 sm:py-20'>
                 <div className='flex flex-col lg:flex-row sm:justify-center'>
                     <div className='m-5 flex flex-col sm:justify-center sm:items-center'>
                         <h3 className='font-text font-bold text-center text-[32px] md:text-[48px]'>İLETİŞİM FORMU</h3>
-                        <form className='mt-5 p-10 border-[0.5px] rounded-md bg-gray-200'>
+                        
+                        
+                        <form id='contact-form' className='mt-5 p-10 border-[0.5px] rounded-md bg-gray-200'>
                             <div className='grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2'>
                             {/* Ad */}
                             <div className='col-span-2 sm:col-span-1'>
@@ -63,7 +85,10 @@ const ContactSection = () => {
                             <div className='mt-10'>
                             <button type='submit' className='block w-full rounded-md bg-gray-800 border-[0.5px] border-neutral-400 px-3.5 py-2.5 text-center text-[16px] text-neutral-300 font-semibold hover:bg-gray-300 hover:text-neutral-800 duration-300'>Gönder</button>
                             </div>
-                        </form>                       
+                        </form> 
+
+                        
+                                              
                     </div>
 
                     <div className='m-5'>
