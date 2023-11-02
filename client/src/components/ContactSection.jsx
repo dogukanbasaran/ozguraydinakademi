@@ -1,7 +1,10 @@
 import React, {useState} from 'react';
 import axios from 'axios';
 
+
 const ContactSection = () => {
+
+
 
     const [formData, setFormData] = useState({
         firstName: "",
@@ -22,15 +25,19 @@ const ContactSection = () => {
     const handleSubmit = async (e) => {
       e.preventDefault();
       axios.post("http://localhost:3001/", formData)
-      .then(res => console.log(res))
+      .then(res => {
+        window.alert("Mesajınız gönderildi.")
+      })
       .catch(err => console.log(err));
+
+      
 
   }
 
 
 
   return (
-    <section>
+    <section className='relative'>
       <div className="bg-gray-100 sm:py-20">
         <div className="flex flex-col lg:flex-row sm:justify-center">
           <div className="m-5 flex flex-col sm:justify-center sm:items-center">

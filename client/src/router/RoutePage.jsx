@@ -3,7 +3,8 @@ import Home from "../pages/Home"
 import About from "../pages/About"
 import Packages from "../pages/Packages"
 import Contact from "../pages/Contact"
-import ContactInfo from "../pages/ContactInfo";
+import ContactPanel from "../pages/ContactPanel";
+import ContactDashBoard from "../pages/ContactDashboard"
 import SharedLayout from "../pages/SharedLayout"
 
 
@@ -17,7 +18,8 @@ const RoutePage = () => {
                 <Route path="/about" element={<About/>}/>
                 <Route path="/packages" element={<Packages/>}/>
                 <Route path="/contact" element={<Contact/>}/>
-                <Route path="/contactpanel" element={<ContactInfo/>}/>
+                <Route path="/contactpanel" element={<ContactPanel/>}/>
+                <Route path="/contactpanel/dashboard" element={<ContactDashBoard/>}/>
                 <Route path="*" element={<div className="text-center text-6xl font-heading h-[500px]">404 page is not found.</div>}/>
             </Route>
         </Routes>
