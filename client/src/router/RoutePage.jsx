@@ -18,10 +18,10 @@ const RoutePage = () => {
                 <Route path="/about" element={<About/>}/>
                 <Route path="/packages" element={<Packages/>}/>
                 <Route path="/contact" element={<Contact/>}/>
-                <Route path="/contactpanel" element={<ContactPanel/>}/>
-                <Route path="/contactpanel/dashboard" element={<ContactDashBoard/>}/>
-                <Route path="*" element={<div className="text-center text-6xl font-heading h-[500px]">404 page is not found.</div>}/>
+                <Route path="*" element={<div className="text-center text-6xl font-heading h-[500px] pt-48">404 page is not found.</div>}/>
             </Route>
+            <Route path="/contactpanel" element={<ContactPanel/>}/>
+            <Route path="/contactpanel/dashboard" element={<ContactDashBoard/>}/>
         </Routes>
   </Router>
 }

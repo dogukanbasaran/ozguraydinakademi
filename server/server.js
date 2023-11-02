@@ -40,6 +40,13 @@ app.post("/login", async(req, res) => {
    })
 })
 
+
+app.get("/getUsers", (req, res) => {
+    UserModel.find()
+    .then(users => res.json(users))
+    .catch(err => res.json(err))
+})
+
 const port = 3001;
 
 app.listen(port, () => {console.log(`Sunucu ${port} portunda başlatıldı.`)})
