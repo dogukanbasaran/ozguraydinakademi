@@ -27,20 +27,23 @@ const ContactDashboard = () => {
   return (
     <div className='bg-gray-950'>
 
-    <div className='h-[100px] bg-gray-800 text-neutral-300 flex justify-between'>
-      <div id='userProfile' className='flex justify-start items-center h-[100px] pl-5'>
-          {
-            users.map(user => {
-              return(
-                <div className='flex items-center gap-2'>
-                <img src={photo} className='w-[50px] h-[50px] rounded-full'/>
-                <h2 className='font-text text-[18px]'>{user.userName}</h2>
-                </div>
-              )
-            })
-          }
+    <div className='h-[100px] bg-gray-800 text-neutral-300 flex items-center justify-between'>
+      <div id='logo' className='lg:pl-5'>
+            <h1 className='font-extrabold font-heading text-[24px] whitespace-nowrap'>Özgür Aydın Akademi</h1>
       </div>
-      <div className='flex items-center pr-5'>
+      <div className='flex items-center pr-5 gap-6'>
+        <div id='userProfile' className='flex justify-start items-center h-[100px] pl-5'>
+            {
+              users.map(user => {
+                return(
+                  <div className='flex items-center gap-2'>
+                  <img src={photo} className='w-[50px] h-[50px] rounded-full'/>
+                  <h2 className='font-text text-[18px]'>{user.userName}</h2>
+                  </div>
+                )
+              })
+            }
+        </div>
        <span className='rounded-full  w-[40px] h-[40px] flex items-center justify-center hover:bg-gray-700 duration-200'>
         <button onClick={handleLogout} className='text-white text-[24px]'>
             <IoIosLogOut/>
