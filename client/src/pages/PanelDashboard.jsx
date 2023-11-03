@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import ContactsData from '../components/ContactsData'
+import PanelContactData from '../components/PanelContactData'
 import axios from 'axios'
 import photo from '../assets/profile/IMG_20190819_133506_876.jpg'
 import {IoIosLogOut} from 'react-icons/io'
@@ -19,7 +19,7 @@ const ContactDashboard = () => {
   },[])
 
   const handleLogout = () => {
-    navigate("/contactpanel")
+    navigate("/panel")
   }
 
 
@@ -36,7 +36,7 @@ const ContactDashboard = () => {
             {
               users.map(user => {
                 return(
-                  <div className='flex items-center gap-2'>
+                  <div className='flex items-center gap-2 ' key={user._id}>
                   <img src={photo} className='w-[50px] h-[50px] rounded-full'/>
                   <h2 className='font-text text-[18px]'>{user.userName}</h2>
                   </div>
@@ -55,7 +55,7 @@ const ContactDashboard = () => {
 
      
       <div className='h-[auto] pt-36 justify-center px-20 flex'>
-        <ContactsData/>    
+        <PanelContactData/>    
       </div>
     </div>
   )

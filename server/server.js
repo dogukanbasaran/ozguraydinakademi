@@ -11,18 +11,39 @@ require('./db/connection');
 app.use(cors());
 app.use(express.json());
 
+
+// GET CONTACTS DATA
+
 app.get("/getContacts", (req, res) => {
     ContactModel.find()
     .then(contacts => res.json(contacts))
     .catch(err => res.json(err))
 })
 
-app.post("/", async (req, res) => {
-    let contact = new ContactModel(req.body);
-    let result = await contact.save();
+// CREATE A NEW CONTACTS DATA (FROM AN USER IN WEBSITE CONTACT FORM)
+
+app.post("/createContacts", async (req, res) => {
+    const contact = new ContactModel(req.body);
+    const result = await contact.save();
     res.send(result);
 })
 
+
+// DELETE A CONTACT DATA
+
+app.delete("/deleteContact/:id", (req,res) => {
+   const contactId = req.params.id;
+   ContactModel.findByIdAndRemove(contactId, (err, contact) => {
+    if(err){
+        console.log(err);
+        res.status(500).send("Silme işlemi başarısız oldu.");
+    } else {
+        res.status(200).send("Veri başarıyla silindi.");
+    }
+   })
+})
+
+// TO LOGIN AS AN ADMIN
 
 app.post("/login", async(req, res) => {
    const {userName, password} = req.body;
@@ -40,6 +61,7 @@ app.post("/login", async(req, res) => {
    })
 })
 
+// GET ADMIN USERS
 
 app.get("/getUsers", (req, res) => {
     UserModel.find()
@@ -47,6 +69,8 @@ app.get("/getUsers", (req, res) => {
     .catch(err => res.json(err))
 })
 
-const port = 3001;
 
+
+
+const port = 3001;
 app.listen(port, () => {console.log(`Sunucu ${port} portunda başlatıldı.`)})

@@ -14,8 +14,14 @@ const ContactsData = () => {
 
     },[])
 
+    const deleteContactData = () => {
+        alert("delete")
+    }
+
+
   return (
-    <table className='mb-10'>
+    <div className='rounded-2xl p-5 mb-10 bg-gray-800'>
+    <table>
         <thead className='bg-gray-950 text-neutral-300 h-[50px]'>
             <tr className='text-[18px] font-text'>
                 <th className='border px-5'>Ad</th>
@@ -23,7 +29,7 @@ const ContactsData = () => {
                 <th className='border px-5'>Email</th>
                 <th className='border px-5'>Telefon No</th>
                 <th className='border px-5'>Mesaj</th>
-                <th className='border px-5'><AiOutlineQuestion className='text-[24px]'/></th>
+                <th className='border px-5'><AiOutlineQuestion className='text-[26px] text-center w-[40px]'/></th>
             </tr>
         </thead>
 
@@ -37,12 +43,13 @@ const ContactsData = () => {
                         <td className='border px-5'>{contact.email}</td>
                         <td className='border px-5'>{contact.phone}</td>
                         <td className='border px-5'>{contact.message}</td>
-                        <td className='border px-5 hover:bg-gray-700 duration-200 cursor-pointer'><button className='text-[24px]'><AiTwotoneDelete/></button></td>
+                        <td className='border px-5'><button className='text-[24px] rounded-full p-2 hover:bg-gray-700 duration-200 cursor-pointer' onClick={deleteContactData}><AiTwotoneDelete/></button></td>
                     </tr> )
                 })
             }
         </tbody>
     </table>
+    </div>  
   )
 }
 

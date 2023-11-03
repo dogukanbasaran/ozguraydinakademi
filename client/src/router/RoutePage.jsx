@@ -3,8 +3,8 @@ import Home from "../pages/Home"
 import About from "../pages/About"
 import Packages from "../pages/Packages"
 import Contact from "../pages/Contact"
-import ContactPanel from "../pages/ContactPanel";
-import ContactDashBoard from "../pages/ContactDashboard"
+import PanelLogin from "../pages/PanelLogin";
+import PanelDashBoard from "../pages/PanelDashboard"
 import SharedLayout from "../pages/SharedLayout"
 
 
@@ -20,8 +20,8 @@ const RoutePage = () => {
                 <Route path="/contact" element={<Contact/>}/>
                 <Route path="*" element={<div className="text-center text-6xl font-heading h-[500px] pt-48">404 page is not found.</div>}/>
             </Route>
-            <Route path="/contactpanel" element={<ContactPanel/>}/>
-            <Route path="/contactpanel/dashboard" element={<ContactDashBoard/>}/>
+            <Route path="/panel" element={<PanelLogin/>}/>
+            <Route path="/panel/dashboard" element={<PanelDashBoard/>}/>
         </Routes>
   </Router>
 }

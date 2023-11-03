@@ -24,7 +24,7 @@ const ContactSection = () => {
     
     const handleSubmit = async (e) => {
       e.preventDefault();
-      axios.post("http://localhost:3001/", formData)
+      axios.post("http://localhost:3001/createContacts", formData)
       .then(res => {
         window.alert("Mesajınız gönderildi.")
       })

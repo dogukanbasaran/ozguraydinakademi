@@ -16,9 +16,8 @@ const Login = () => {
                 userName, password
             })
             .then(result => {
-                console.log(result)
                 if(result.data === "Success"){
-                    navigate("/contactpanel/dashboard")
+                    navigate("/panel/dashboard")
                 }
             })
             .catch(err => console.log(err))
