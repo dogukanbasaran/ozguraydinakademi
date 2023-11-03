@@ -2,14 +2,14 @@ import React from 'react'
 
 const Packages = () => {
   return (
-        <section className='h-[auto] py-28'>
-          <div className='container  mx-auto flex flex-col'>
+        <section className='h-[auto] py-28 bg-gray-100'>
+          <div className='flex flex-col'>
 
             <div className='w-full'>
-                <span className='font-heading font-bold text-[48px]'>SANA ÖZEL PAKET</span>
+                <span className='pl-16 font-text font-bold text-[48px]'>SANA ÖZEL PAKET</span>
             </div>
 
-           <div className='flex mt-5 bg-gray-100 rounded-md'>
+           <div className='flex mt-5'>
 
                 <div className='w-2/4 h-[auto] p-10'>
                   <div className='h-[80px] mb-5 flex justify-start items-center px-5 gap-2'>

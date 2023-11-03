@@ -27,9 +27,10 @@ const ContactDashboard = () => {
   return (
     <div className='bg-gray-950'>
 
-    <div className='h-[100px] bg-gray-800 text-neutral-300 flex items-center justify-between'>
-      <div id='logo' className='lg:pl-5'>
-            <h1 className='font-extrabold font-heading text-[24px] whitespace-nowrap'>Özgür Aydın Akademi</h1>
+    <div className='h-[100px] bg-gray-800 text-neutral-300 flex items-center justify-between fixed w-full border-b-[0.5px]'>
+      <div id='logo' className='pl-5 flex flex-col text-center'>
+            <span className='font-extrabold font-heading text-[24px] whitespace-nowrap'>Özgür Aydın Akademi</span>
+            <span className='font-semibold font-text text-[16px] whitespace-nowrap'>Yönetici Paneli</span>
       </div>
       <div className='flex items-center pr-5 gap-6'>
         <div id='userProfile' className='flex justify-start items-center h-[100px] pl-5'>

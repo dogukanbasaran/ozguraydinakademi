@@ -22,7 +22,7 @@ const FeatureSection = () => {
   return (
     <section className=' h-[auto] md:h-[700px] xl:h-[400px] bg-gray-100 mb-5'>
 
-        <h2 className='text-center text-[32px] md:text-[48px] font-semibold font-heading text-neutral-800'>NEDEN BİZ?</h2>
+        <h2 className='text-center text-[32px] md:text-[48px] font-semibold font-text text-neutral-800'>NEDEN BİZ?</h2>
 
         <div className='container py-5 h-[auto] mx-auto flex flex-col justify-center items-center md:grid md:grid-cols-2 md:grid-rows-2 xl:grid-cols-4 px-10 gap-4'>
 
