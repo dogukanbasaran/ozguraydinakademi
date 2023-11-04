@@ -1,4 +1,5 @@
 import React from 'react'
+import matematikData  from '../data/matematik'
 
 const Packages = () => {
   return (
@@ -17,6 +18,50 @@ const Packages = () => {
                         1
                       </span>
                       <span className='text-neutral-800 font-text text-[18px]'>Ders almak istediğiniz konuları seçiniz</span>
+                    </div>
+
+                    <div className='h-[auto] border'>
+                        {/* Matematik */}
+                        <div className='flex flex-col border border-black h-[340px] pl-8 overflow-auto'>
+                              <div className='flex items-center justify-start gap-2'>
+                                  <button className='font-text font-bold text-[40px]'>+</button>
+                                  <span className='font-text font-bold text-[20px] pt-2'>MATEMATİK</span>
+                              </div>
+                              {/* Konular */}
+                              <div>
+                                 <table className='w-full'>
+                                   <thead>
+                                     <tr className='flex pb-2 whitespace-nowrap'><th><input type='checkbox'/> Tümünü Seç</th></tr>
+                                     <tr className='text-[18px] font-text text-neutral-800 font-bold'>
+                                       <th className='px-5'>Seç</th>
+                                       <th className='px-5'>Kod</th>
+                                       <th className='px-5'>Konu</th>
+                                       <th className='px-5'>Seans</th>
+                                     </tr>
+                                   </thead>
+
+                                   <tbody>
+                                      {
+                                        matematikData.map(matematik => {
+                                          return(
+                                            <tr className='text-[16px] text-neutral-700 font-text'>
+                                                <th className='border-y px-5'><input type='checkbox'/></th>
+                                                <th className='border-y px-5'>{matematik.code}</th>
+                                                <th className='border-y px-5'>{matematik.subject}</th>
+                                                <th className='border-y px-5'>{matematik.session}</th>
+                                            </tr>
+                                          )
+                                        })
+                                      }
+                                   </tbody>
+                                 </table>
+                              </div>
+                        </div>
+                        {/* İngilizce */}
+                        <div className='flex items-center justify-start gap-2 border-b pl-8'>
+                              <button className='font-text font-bold text-[40px]'>+</button>
+                              <span className='font-text font-bold text-[20px] pt-2'>İNGİLİZCE</span>
+                        </div>
                     </div>
                 </div>
 
